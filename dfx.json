@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.9.3",
+  "canisters": {
+    "newproject": {
+      "type": "motoko",
+      "main": "src/newproject/main.mo"
+    },
+    "newproject_assets": {
+      "type": "assets",
+      "source": [
+        "src/newproject_assets/assets"
+      ],
+      "dependencies": [
+        "newproject"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8120",
+      "type": "ephemeral"
+    }
+  }
+}
